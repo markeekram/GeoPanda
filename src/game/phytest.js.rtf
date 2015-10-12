@@ -1,0 +1,127 @@
+{\rtf1\ansi\uc0 \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Courier New;}}{\colortbl;\red224\green234\blue238;\red00\green00\blue00;\red191\green03\blue03;\red176\green126\blue00;\red131\green129\blue131;\red131\green129\blue131;\red255\green00\blue255;\red00\green130\blue00;\red129\green129\blue00;\red85\green85\blue85;\red00\green00\blue00;\red00\green00\blue00;\red00\green87\blue174;\red00\green00\blue00;\red01\green01\blue129;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs16
+\pard \cbpat1{{\cf2{{\cf10{    {1} }}game}}{\cf11{.}}{\cf2{}}{\cf15{module}}{\cf2{}}{\cf11{(}}}\par\pard
+\cbpat1{{\cf10{    {2} }}{\cf2{}}  {\cf3{'game.phytest'}}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{    {3} }}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{    {4} }}{\cf2{}}{\cf11{.}}{\cf2{}}{\cf15{require}}{\cf2{}}{\cf11{(}}}\par\pard
+\cbpat1{{\cf10{    {5} }}{\cf2{}}  {\cf5{\i //'engine.core',\i0 }}}\par\pard
+\cbpat1{{\cf10{    {6} }}{\cf2{}}  {\cf3{'engine.pixi'}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{    {7} }}{\cf2{}}  {\cf3{'plugins.model'}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{    {8} }}{\cf2{}}  {\cf3{'plugins.controller'}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{    {9} }}{\cf2{}}  {\cf3{'plugins.view'}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{   {1}{0} }}{\cf2{}}  {\cf3{'plugins.importer'}}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{   {1}{1} }}{\cf11{).}}{\cf2{}}{\cf15{body}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {1}{2} }}{\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{createScene}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'Main'}}{\cf2{}}{\cf11{,\{}}}\par\pard
+\cbpat1{{\cf10{   {1}{3} }}{\cf2{  backgroundColor}}{\cf11{:}} {\cf2{}}{\cf4{{0}xF{1}EEE{8}}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{   {1}{4} }}{\cf2{  alpha}}{\cf11{:}} {\cf2{}}{\cf4{{0}.{5}}}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{   {1}{5} }}{\cf2{  interactive}}{\cf11{:}} {\cf2{}}{\cf12{\b true\b0 }}{\cf2{}}{\cf11{,}}}\par\pard
+\cbpat1{{\cf10{   {1}{6} }}{\cf2{  init}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {1}{7} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{debug}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{DebugDraw}}}\par\pard
+\cbpat1{{\cf10{   {1}{8} }}    {\cf12{\b var\b0 }} {\cf2{map}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{Map}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{"EPSG:{4}{3}{2}{6}"}}{\cf2{}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {1}{9} }}{\cf2{}}    {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{Box{2}Dworld}} {\cf11{=}} {\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{World}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{),}} {\cf2{}}{\cf12{\b true\b0 }}{\cf2{}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {2}{0} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{graphic}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{Graphics}}{\cf2{}}{\cf11{()}}}\par\pard
+\cbpat1{{\cf10{   {2}{1} }}{\cf2{    graphic}}{\cf11{.}}{\cf2{}}{\cf15{lineStyle}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{1}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{'{0}x{0}{0}{0}{0}{0}{0}'}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}}}{\cf2{}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {2}{2} }}{\cf2{    graphic}}{\cf11{.}}{\cf2{update{2}}}{\cf11{=}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{\}}}}\par\pard
+\cbpat1{{\cf10{   {2}{3} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{style}}{\cf11{=}} {\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{Style}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b true\b0 }}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{'{0}xFFFFFF'}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{'{0}x{2}E{3}{4}{3}{6}'}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{0}.{5}}}{\cf2{}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {2}{4} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{coords{1}}}{\cf11{=[[[}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{7}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{7}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{8}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{8}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{7}{8}}}{\cf2{}}{\cf11{]]]}}}\par\pard
+\cbpat1{{\cf10{   {2}{5} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{coords{2}}}{\cf11{=[[[}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{4}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{3}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{4}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{4}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{4}{0}}}{\cf2{}}{\cf11{]]]}}}\par\pard
+\cbpat1{{\cf10{   {2}{6} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{coords{3}}}{\cf11{=[[[}}{\cf2{}}{\cf4{{8}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{8}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{9}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{9}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{8}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{8}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{]]]}}}\par\pard
+\cbpat1{{\cf10{   {2}{7} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{coords{4}}}{\cf11{=[[[}}{\cf2{}}{\cf4{{2}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{2}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{3}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{8}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{3}{4}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{3}{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{2}{8}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{2}}}{\cf2{}}{\cf11{]]]}}}\par\pard
+\cbpat1{{\cf10{   {2}{8} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{coords{5}}}{\cf11{=[[}}{\cf2{}}{\cf4{{2}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}{0}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{2}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{2}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{1}{0}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{2}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{1}{0}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}{0}{0}}}{\cf2{}}{\cf11{],[}}{\cf2{}}{\cf4{{2}{5}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{1}{0}{0}}}{\cf2{}}{\cf11{]]}} {\cf2{}}{\cf5{\i //[{0},-{1}{0}{0}],\i0 }}}\par\pard
+\cbpat1{{\cf10{   {2}{9} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{1}}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"Polygon"}}{\cf2{}}{\cf11{,}}{\cf2{coords{1}}}{\cf11{,}}{\cf2{style}}{\cf11{,}}{\cf2{}}{\cf3{"model{1}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{0} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{2}}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"Polygon"}}{\cf2{}}{\cf11{,}}{\cf2{coords{2}}}{\cf11{,}}{\cf2{style}}{\cf11{,}}{\cf2{}}{\cf3{"model{2}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{1} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{3}}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"Polygon"}}{\cf2{}}{\cf11{,}}{\cf2{coords{3}}}{\cf11{,}}{\cf2{style}}{\cf11{,}}{\cf2{}}{\cf3{"model{3}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{2} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{4}}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"Polygon"}}{\cf2{}}{\cf11{,}}{\cf2{coords{4}}}{\cf11{,}}{\cf2{style}}{\cf11{,}}{\cf2{}}{\cf3{"model{4}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{3} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{5}}} {\cf11{=}} {\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"Point"}}{\cf2{}}{\cf11{,[}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{6}{0}}}{\cf2{}}{\cf11{],}}{\cf2{style}}{\cf11{,}}{\cf2{}}{\cf3{"model{3}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{4} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{model{6}}} {\cf11{=}} {\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{4}{3}{2}{6}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"LineString"}}{\cf2{}}{\cf11{,}}{\cf2{coords{5}}}{\cf11{,\{\},}}{\cf2{}}{\cf3{"model{6}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {3}{5} }}{\cf2{    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_dynamicBody}\par\pard
+\cbpat1{{\cf10{   {3}{6} }}    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{bullet}}{\cf11{=}}{\cf2{}}{\cf12{\b true\b0 }}}\par\pard
+\cbpat1{{\cf10{   {3}{7} }}{\cf2{    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{density}} {\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {3}{8} }}{\cf2{    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{friction}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{5}}}}\par\pard
+\cbpat1{{\cf10{   {3}{9} }}{\cf2{    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{restitution}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{2}}}}\par\pard
+\cbpat1{{\cf10{   {4}{0} }}{\cf2{    model{1}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{filter}}{\cf11{.}}{\cf2{groupIndex}}{\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {4}{1} }}{\cf2{    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_dynamicBody}\par\pard
+\cbpat1{{\cf10{   {4}{2} }}    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{bullet}}{\cf11{=}}{\cf2{}}{\cf12{\b true\b0 }}}\par\pard
+\cbpat1{{\cf10{   {4}{3} }}{\cf2{    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{density}} {\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {4}{4} }}{\cf2{    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{friction}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{5}}}}\par\pard
+\cbpat1{{\cf10{   {4}{5} }}{\cf2{    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{restitution}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{2}}}}\par\pard
+\cbpat1{{\cf10{   {4}{6} }}{\cf2{    model{2}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{filter}}{\cf11{.}}{\cf2{groupIndex}}{\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {4}{7} }}{\cf2{    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_dynamicBody}\par\pard
+\cbpat1{{\cf10{   {4}{8} }}    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{bullet}}{\cf11{=}}{\cf2{}}{\cf12{\b true\b0 }}}\par\pard
+\cbpat1{{\cf10{   {4}{9} }}{\cf2{    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{density}} {\cf11{=}}{\cf2{}}{\cf4{{1}{0}}}}\par\pard
+\cbpat1{{\cf10{   {5}{0} }}{\cf2{    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{friction}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{7}}}}\par\pard
+\cbpat1{{\cf10{   {5}{1} }}{\cf2{    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{restitution}} {\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {5}{2} }}{\cf2{    model{3}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{filter}}{\cf11{.}}{\cf2{groupIndex}}{\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {5}{3} }}{\cf2{    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_dynamicBody}\par\pard
+\cbpat1{{\cf10{   {5}{4} }}    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{bullet}}{\cf11{=}}{\cf2{}}{\cf12{\b true\b0 }}}\par\pard
+\cbpat1{{\cf10{   {5}{5} }}{\cf2{    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{density}} {\cf11{=}}{\cf2{}}{\cf4{{1}{0}}}}\par\pard
+\cbpat1{{\cf10{   {5}{6} }}{\cf2{    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{friction}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{7}}}}\par\pard
+\cbpat1{{\cf10{   {5}{7} }}{\cf2{    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{restitution}} {\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {5}{8} }}{\cf2{    model{4}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{filter}}{\cf11{.}}{\cf2{groupIndex}}{\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {5}{9} }}{\cf2{    model{5}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_kinematicBody}\par\pard
+\cbpat1{{\cf10{   {6}{0} }}    model{5}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{linearVelocity}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}}}{\cf2{}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {6}{1} }}{\cf2{    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{type}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{Body}}{\cf11{.}}{\cf2{b{2}_staticBody}\par\pard
+\cbpat1{{\cf10{   {6}{2} }}    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{bodyDef}}{\cf11{.}}{\cf2{bullet}}{\cf11{=}}{\cf2{}}{\cf12{\b true\b0 }}}\par\pard
+\cbpat1{{\cf10{   {6}{3} }}{\cf2{    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{density}} {\cf11{=}}{\cf2{}}{\cf4{{5}}}}\par\pard
+\cbpat1{{\cf10{   {6}{4} }}{\cf2{    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{friction}} {\cf11{=}}{\cf2{}}{\cf4{{0}.{7}}}}\par\pard
+\cbpat1{{\cf10{   {6}{5} }}{\cf2{    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{restitution}} {\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {6}{6} }}{\cf2{    model{6}}}{\cf11{.}}{\cf2{physic}}{\cf11{.}}{\cf2{fixtureDef}}{\cf11{.}}{\cf2{filter}}{\cf11{.}}{\cf2{groupIndex}}{\cf11{=}}{\cf2{}}{\cf4{{1}}}}\par\pard
+\cbpat1{{\cf10{   {6}{7} }}{\cf2{}}    {\cf12{\b var\b0 }} {\cf2{layer}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{Layer}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{"PhysikTestLayer"}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"EPSG:{4}{3}{2}{6}"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {6}{8} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addChild}}{\cf2{}}{\cf11{(}}{\cf2{graphic}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {6}{9} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{1}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{0} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{1}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{1} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{1}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{2} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{2}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{3} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{2}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{4} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{2}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{5} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{3}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{6} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{3}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{7} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{3}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{8} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{4}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {7}{9} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{4}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{0} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{4}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{1} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{5}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{2} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{5}}}{\cf11{,}}{\cf2{}}{\cf4{{2}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf3{"meter"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{3} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{5}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{4} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{drawObj}}{\cf2{}}{\cf11{(}}{\cf2{model{6}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{5} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addHitArea}}{\cf2{}}{\cf11{(}}{\cf2{model{6}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{6} }}{\cf2{    layer}}{\cf11{.}}{\cf2{}}{\cf15{addPhysics}}{\cf2{}}{\cf11{(}}{\cf2{model{6}}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {8}{7} }}{\cf2{    layer}}{\cf11{.}}{\cf2{children}}{\cf11{[}}{\cf2{model{5}}}{\cf11{.}}{\cf2{index}}{\cf11{].}}{\cf2{graphicsData}}{\cf14{\b [{0}]\b0 }}{\cf2{}}{\cf11{.}}{\cf2{shape}}{\cf11{.}}{\cf2{radius}}{\cf11{=}}{\cf2{}}{\cf4{{2}}}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {8}{8} }}{\cf2{    layer}}{\cf11{.}}{\cf2{children}}{\cf11{[}}{\cf2{model{1}}}{\cf11{.}}{\cf2{index}}{\cf11{].}}{\cf2{click}}{\cf11{=}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {8}{9} }}{\cf2{}}          {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{ApplyImpulse}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,-}}{\cf2{}}{\cf4{{5}{0}{0}}}{\cf2{}}{\cf11{),}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{GetPosition}}{\cf2{}}{\cf11{());}}}\par\pard
+\cbpat1{{\cf10{   {9}{0} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {9}{1} }}{\cf2{    layer}}{\cf11{.}}{\cf2{children}}{\cf11{[}}{\cf2{model{2}}}{\cf11{.}}{\cf2{index}}{\cf11{].}}{\cf2{click}}{\cf11{=}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {9}{2} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{ApplyImpulse}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{0}{0}}}{\cf2{}}{\cf11{),}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{GetPosition}}{\cf2{}}{\cf11{());}}}\par\pard
+\cbpat1{{\cf10{   {9}{3} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {9}{4} }}{\cf2{    layer}}{\cf11{.}}{\cf2{children}}{\cf11{[}}{\cf2{model{3}}}{\cf11{.}}{\cf2{index}}{\cf11{].}}{\cf2{click}}{\cf11{=}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {9}{5} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{ApplyImpulse}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,-}}{\cf2{}}{\cf4{{5}{0}{0}}}{\cf2{}}{\cf11{),}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{GetPosition}}{\cf2{}}{\cf11{());}}}\par\pard
+\cbpat1{{\cf10{   {9}{6} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {9}{7} }}{\cf2{    layer}}{\cf11{.}}{\cf2{children}}{\cf11{[}}{\cf2{model{4}}}{\cf11{.}}{\cf2{index}}{\cf11{].}}{\cf2{click}}{\cf11{=}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {9}{8} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{ApplyImpulse}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{Box{2}D}}{\cf11{.}}{\cf2{}}{\cf15{Vec{2}}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,}}{\cf2{}}{\cf4{{5}{0}{0}}}{\cf2{}}{\cf11{),}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{body}}{\cf11{.}}{\cf2{}}{\cf15{GetPosition}}{\cf2{}}{\cf11{());}}}\par\pard
+\cbpat1{{\cf10{   {9}{9} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{0} }}{\cf2{    map}}{\cf11{.}}{\cf2{}}{\cf15{addLayer}}{\cf2{}}{\cf11{(}}{\cf2{layer}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{1} }}{\cf2{}}    {\cf6{\i /*var debugDraw=new game.Box{2}D.DebugDraw()\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{2} }}{\cf6{\i     var ctx=document.getElementById("debug").getContext("{2}d")\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{3} }}{\cf6{\i     ctx.translate({0},{0})\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{4} }}{\cf6{\i     debugDraw.SetSprite(ctx); //document.getElementById("canvas").getContext("{2}d")\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{5} }}{\cf6{\i     debugDraw.m_sprite.graphics = new game.Graphics();\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{6} }}{\cf6{\i     debugDraw.SetDrawScale(map.scale.x);\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{7} }}{\cf6{\i     debugDraw.SetFillAlpha({0}.{5});\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{8} }}{\cf6{\i     debugDraw.SetLineThickness({1}.{0});\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{0}{9} }}{\cf6{\i     debugDraw.SetFlags(game.Box{2}D.DebugDraw.e_shapeBit | game.Box{2}D.DebugDraw.e_pairBit );\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{0} }}{\cf6{\i     this.Box{2}Dworld.SetDebugDraw(debugDraw);*/\i0 }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{1} }}    {\cf11{\},}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{2} }}{\cf2{    update}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{3} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{}}{\cf15{_super}}{\cf2{}}{\cf11{();}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{4} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{Box{2}Dworld}}{\cf11{.}}{\cf2{}}{\cf15{Step}}{\cf2{}}{\cf11{(}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{5} }}{\cf2{        game}}{\cf11{.}}{\cf2{system}}{\cf11{.}}{\cf2{delta}}{\cf11{,}} {\cf2{}}{\cf5{\i //time elapsed game.system.delta\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{6} }}{\cf2{}}        {\cf4{{6}}}{\cf2{}}{\cf11{,}}  {\cf2{}}{\cf5{\i //world Velocity Iterations {6}\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{7} }}{\cf2{}}        {\cf4{{2}}} {\cf2{}}{\cf5{\i //world Position Iterations  {6}\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{8} }}{\cf2{}}      {\cf11{);}}}\par\pard
+\cbpat1{{\cf10{  {1}{1}{9} }}{\cf2{}}      {\cf5{\i //this.Box{2}Dworld.DrawDebugData();\i0 }}}\par\pard
+\cbpat1{{\cf10{  {1}{2}{0} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{Box{2}Dworld}}{\cf11{.}}{\cf2{}}{\cf15{ClearForces}}{\cf2{}}{\cf11{();}}}\par\pard
+\cbpat1{{\cf10{  {1}{2}{1} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{stage}}{\cf11{.}}{\cf2{children}}{\cf14{\b [{0}]\b0 }}{\cf2{}}{\cf11{.}}{\cf2{}}{\cf15{update}}{\cf2{}}{\cf11{();}}}\par\pard
+\cbpat1{{\cf10{  {1}{2}{2} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{  {1}{2}{3} }}{\cf2{}}  {\cf11{\});}}}\par\pard
+\cbpat1{{\cf10{  {1}{2}{4} }}{\cf2{}}{\cf11{\})}}{\cf2{}}}\par\pard
+\cbpat1{}}

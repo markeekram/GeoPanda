@@ -1,0 +1,974 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Courier New;}{\f6\fnil\fprq1\fcharset128 Courier 10 Pitch;}{\f7\fnil\fprq2\fcharset0 Droid Sans Fallback;}{\f8\fnil\fprq2\fcharset0 Tibetan Machine Uni;}{\f9\fnil\fprq0\fcharset128 Tibetan Machine Uni;}}
+{\colortbl;\red0\green0\blue0;\red85\green85\blue85;\red1\green1\blue129;\red191\green3\blue3;\red131\green129\blue131;\red176\green126\blue0;\red128\green128\blue128;\red224\green234\blue238;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af7\dbch\af8\afs28\loch\f4\fs28 Heading;}
+{\s16\sbasedon0\snext16\sl288\slmult1\sb0\sa140 Text Body;}
+{\s17\sbasedon16\snext17\sl288\slmult1\sb0\sa140\dbch\af9 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af9\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af9 Index;}
+}{\*\generator LibreOffice/4.4.3.2$Linux_X86_64 LibreOffice_project/40m0$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\author Markus Lang}{\revtim\yr2015\mo10\dy11\hr20\min13}{\printim\yr0\mo0\dy0\hr0\min0}}\deftab720
+\viewscale110
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep}\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+module}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+2 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'game.mvc'}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+3 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+4 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+require}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+5 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//'engine.core',}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+6 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'plugins.model'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+7 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'plugins.controller'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+8 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'plugins.view'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+    }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+9 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'plugins.importer'}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+10 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+).}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+body}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+function}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+()\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+11 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addAsset}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'bezirksgrenzen_wien.json'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+12 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addAsset}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'autoblands_wien.json'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+13 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addAsset}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'polizei_wien.json'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+14 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+createScene}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'Main'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+15 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  backgroundColor:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0xF1EEE8}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+16 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  interactive:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+17 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  init:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+function}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+()\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+18 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+paths=[}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'polizei_wien.json'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"autoblands_wien.json"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'bezirksgrenzen_wien.json'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+];}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+19 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+map=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Map}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"EPSG:4326"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+20 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.Box2Dworld}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+World}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Vec2}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+),}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+false}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+21 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+bodyDef=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+BodyDef}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+22 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+fixtureDef=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+FixtureDef}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+23 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bodyDef.type}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.Body.b2_dynamicBody;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+24 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bodyDef.allowSleep=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+25 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bodyDef.awake=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+false}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+26 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    fixtureDef.density=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+5}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+27 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    fixtureDef.friction=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.7}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+28 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    fixtureDef.restitution=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+29 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Polygon import and visualisation ( plus hitArea,physical body, label)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+30 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+style=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Style}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'0xFFFFFF'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'0x2E3436'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.001}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+31 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    console.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+log}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(style);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+32 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+bezimporter}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Importer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"GeoJson"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,paths}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[2]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Create Importer for loading }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+33 }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+                      Datamodel}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+34 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+bezmodel=bezimporter.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+getModels}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+   }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Get model}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+35 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+for}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+x=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,cm=bezmodel.length;x<cm;x++)\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+36 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.label=bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.BEZ_RZ;}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Iterate over model an set some }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+37 }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+                        properties}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+38 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.physic.bodyDef=bodyDef;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+39 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.physic.fixtureDef=fixtureDef;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+40 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.style=style;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+41 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+42 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+bezlayer}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Layer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"bezirksgrenzen wien"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"EPSG:4326"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+       }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Create new Layer}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+43 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bezlayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+drawObj}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezmodel);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+   }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Draw the GisObjects}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+44 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bezlayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addHitArea}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezmodel,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.01}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"meter"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+   }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Add the Hitareas for the GisObjects}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+45 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bezlayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addPhysics}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezmodel);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Add the physical body}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+46 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    map.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addLayer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezlayer);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+   }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Add layer to map}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+47 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bezlayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addLabel}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezmodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+48 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//LineString/MulitLineString import and visualisation}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+49 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+strStyle}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Style}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+false}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+null}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+null}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'0x9AD49A'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.00001}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+50 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+straimporter}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Importer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"GeoJson"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,paths}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[1]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+51 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+strmodel}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+straimporter.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+getModels}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+52 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    console.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+log}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(strmodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+53 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+for}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+x=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;x<strmodel.length;x++)\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+54 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      strmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.style=strStyle;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+55 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+56 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+strlayer=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Layer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"autoblands wien"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"EPSG:4326"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+57 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    strlayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+drawObj}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(strmodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+58 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    map.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addLayer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(strlayer)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+59 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Point import and visualisation}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+60 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+poliimporter}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Importer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"GeoJson"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,paths}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[0]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+61 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+polimodel}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+poliimporter.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+getModels}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+62 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+polistyle=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Style}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+false}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+null}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+null}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+1}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+'0x0000FF'}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.01}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+63 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+for}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+x=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,cp=polimodel.length;x<cp;x++)\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+64 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polimodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.style=polistyle;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+65 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+66 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+polilayer=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Layer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"polizei wien"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"EPSG:4326"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+67 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    polilayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+drawObj}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(polimodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+68 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    polilayer.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addHitArea}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(polimodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+69 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    map.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+addLayer}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(polilayer);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+70 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//Determine all policestation within the given polygon and change lineColor and fill to red}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+71 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+within}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+turf.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+featurecollection}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+([turf.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+polygon}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[5]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.coordinates,\{properties:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+72 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+                 bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[5]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties,index:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[5]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.index\})]);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+73 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+featurelist=[];}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+74 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    polimodel.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+forEach}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+75 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+function}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(v,i,a)\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+76 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+        featurelist.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+push}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(turf.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+point}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(v.coordinates,\{properties:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+v.properties,index:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+v.index\}))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+77 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+78 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+79 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+points}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+turf.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+featurecollection}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(featurelist);}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//game.getJSON(paths[0]); //polilayer.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+80 }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+                 toGeoJsonFeature(polimodel);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+81 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+re=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+turf.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+within}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(points,within);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+82 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    console.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+log}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(re);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+83 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+for}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+var}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+x=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;x<re.features.length;x++)\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+84 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polilayer.children[re.features}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.index].graphicsData}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[0]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.lineColor=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0xFF0000}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+85 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polilayer.children[re.features}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.index].graphicsData}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[0]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.fill=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+86 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polilayer.children[re.features}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.index].graphicsData}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[0]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.fillColor=}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0xFF0000}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+87 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polilayer.children[re.features}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.index].clearDirty=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+88 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      polilayer.children[re.features}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[x]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.properties.index].dirty=}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+true}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+89 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+90 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    bezlayer.children[bezmodel}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[5]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.index].click=}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+function}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+()\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+91 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      console.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+log}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf4\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+"Kollision"}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+92 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      console.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+log}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+93 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.body.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ApplyImpulse}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+new}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+game.Box2D.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Vec2}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+0.000001}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+),}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.body.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+GetPosition}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+());}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+94 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+95 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\},}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+96 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  update:}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+function}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+()\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+97 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+_super}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+98 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.Box2Dworld.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+Step}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+(}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+   }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+99 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      game.system.delta,}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//time elapsed game.system.delta}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+100 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+6}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+,}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//world Velocity Iterations 6}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+101 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+      }{\cf6\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+2}{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ }{\cf5\i\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+//world Position Iterations  6}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+102 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+103 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.Box2Dworld.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+ClearForces}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+104 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+    }{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+this}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.stage.children}{\cf1\b\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+[0]}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+.}{\cf3\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+update}{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+105 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+106 }{\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+  }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\});}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af7\langfe2052\dbch\af8\afs24\alang2129\loch\f3\fs24\lang1033\li-283\ri-283\lin-283\rin-283\fi0\cbpat8{\cf2\afs16\dbch\af6\rtlch \ltrch\loch\f6\fs16
+  }{\cf2\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+107 }{\cf1\dbch\af6\afs16\rtlch \ltrch\loch\fs16\loch\f6
+\});}
+\par }

@@ -1,0 +1,70 @@
+{\rtf1\ansi\uc0 \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Courier New;}}{\colortbl;\red224\green234\blue238;\red00\green00\blue00;\red191\green03\blue03;\red176\green126\blue00;\red131\green129\blue131;\red131\green129\blue131;\red255\green00\blue255;\red00\green130\blue00;\red129\green129\blue00;\red85\green85\blue85;\red00\green00\blue00;\red00\green00\blue00;\red00\green87\blue174;\red00\green00\blue00;\red01\green01\blue129;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs16
+\pard \cbpat1{{\cf2{{\cf10{    {1} }}game}}{\cf11{.}}{\cf2{}}{\cf15{module}}{\cf2{}}{\cf11{(}}}\par\pard
+\cbpat1{{\cf10{    {2} }}{\cf2{}}  {\cf3{'plugins.importer'}}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{    {3} }}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{    {4} }}{\cf2{}}{\cf11{.}}{\cf2{}}{\cf15{require}}{\cf2{}}{\cf11{(}}}\par\pard
+\cbpat1{{\cf10{    {5} }}{\cf2{}}  {\cf3{'plugins.model'}}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{    {6} }}{\cf11{).}}{\cf2{}}{\cf15{body}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{    {7} }}{\cf2{  game}}{\cf11{.}}{\cf2{}}{\cf15{createClass}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'Importer'}}{\cf2{}}{\cf11{,\{}}}\par\pard
+\cbpat1{{\cf10{    {8} }}{\cf2{    init}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{(}}{\cf2{type}}{\cf11{,}}{\cf2{path}}{\cf11{)\{}}}\par\pard
+\cbpat1{{\cf10{    {9} }}{\cf2{}}      {\cf12{\b switch\b0 }}{\cf2{}}{\cf11{(}}{\cf2{type}}{\cf11{)\{}}}\par\pard
+\cbpat1{{\cf10{   {1}{0} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"GeoJson"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {1}{1} }}{\cf2{}}          {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{models}}{\cf11{=}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GeoJsonImporter}}{\cf2{}}{\cf11{(}}{\cf2{path}}{\cf11{).}}{\cf2{}}{\cf15{getModels}}{\cf2{}}{\cf11{();}}}\par\pard
+\cbpat1{{\cf10{   {1}{2} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {1}{3} }}{\cf2{}}        {\cf12{\b default\b0 }}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {1}{4} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{"Data format not supported"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {1}{5} }}{\cf2{}}      {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {1}{6} }}{\cf2{}}    {\cf11{\},}}}\par\pard
+\cbpat1{{\cf10{   {1}{7} }}{\cf2{}\par\pard
+\cbpat1{{\cf10{   {1}{8} }}    getModels}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {1}{9} }}{\cf2{}}      {\cf12{\b return this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{models}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {2}{0} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {2}{1} }}{\cf2{}}  {\cf11{\});}}}\par\pard
+\cbpat1{{\cf10{   {2}{2} }}{\cf2{}\par\pard
+\cbpat1{{\cf10{   {2}{3} }}  game}}{\cf11{.}}{\cf2{}}{\cf15{createClass}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'GeoJsonImporter'}}{\cf2{}}{\cf11{,\{}}}\par\pard
+\cbpat1{{\cf10{   {2}{4} }}{\cf2{    init}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{(}}{\cf2{path}}{\cf11{)\{}}}\par\pard
+\cbpat1{{\cf10{   {2}{5} }}{\cf2{}}      {\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{=}}{\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{getJSON}}{\cf2{}}{\cf11{(}}{\cf2{path}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {2}{6} }}{\cf2{}}      {\cf11{\},}}}\par\pard
+\cbpat1{{\cf10{   {2}{7} }}{\cf2{      }\par\pard
+\cbpat1{{\cf10{   {2}{8} }}    getModels}}{\cf11{:}} {\cf2{}}{\cf12{\b function\b0 }}{\cf2{}}{\cf11{()\{}}}\par\pard
+\cbpat1{{\cf10{   {2}{9} }}{\cf2{      console}}{\cf11{.}}{\cf2{}}{\cf15{log}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {3}{0} }}{\cf2{}}      {\cf12{\b switch\b0 }}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{.}}{\cf2{type}}{\cf11{)\{}}}\par\pard
+\cbpat1{{\cf10{   {3}{1} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"Point"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {3}{2} }}{\cf2{}}          {\cf12{\b return new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{().}}{\cf2{}}{\cf15{createFromObj}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {3}{3} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {3}{4} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"LineString"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {3}{5} }}{\cf2{}}          {\cf12{\b return new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{().}}{\cf2{}}{\cf15{createFromObj}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {3}{6} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {3}{7} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"Polygon"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {3}{8} }}{\cf2{}}          {\cf12{\b return new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{().}}{\cf2{}}{\cf15{createFromObj}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {3}{9} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {4}{0} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"MultiPoint"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {4}{1} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'MultiPoints are not supported by this prototype'}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {4}{2} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {4}{3} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"MultiLineString"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {4}{4} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'MultiLineStrings are not supported by this prototype'}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {4}{5} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {4}{6} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"MultiPolygon"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {4}{7} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'MultiPolygons are not supported by this prototype'}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {4}{8} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {4}{9} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"Feature"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {5}{0} }}{\cf2{}}          {\cf12{\b var\b0 }} {\cf2{model}}{\cf11{=}} {\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{().}}{\cf2{}}{\cf15{createFromObj}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{);}}}\par\pard
+\cbpat1{{\cf10{   {5}{1} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {5}{2} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"FeatureCollection"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {5}{3} }}{\cf2{}}        {\cf12{\b var\b0 }} {\cf2{models}}{\cf11{=[];}}}\par\pard
+\cbpat1{{\cf10{   {5}{4} }}{\cf2{}}          {\cf12{\b for\b0 }}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b var\b0 }} {\cf2{x}}{\cf11{=}}{\cf2{}}{\cf4{{0}}}{\cf2{}}{\cf11{,}}{\cf2{cf}}{\cf11{=}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{.}}{\cf2{features}}{\cf11{.}}{\cf2{length}}{\cf11{;}}{\cf2{x}}{\cf11{<}}{\cf2{cf}}{\cf11{;}}{\cf2{x}}{\cf11{++)\{}}}\par\pard
+\cbpat1{{\cf10{   {5}{5} }}{\cf2{            models}}{\cf11{.}}{\cf2{}}{\cf15{push}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b new\b0 }} {\cf2{game}}{\cf11{.}}{\cf2{}}{\cf15{GisData}}{\cf2{}}{\cf11{().}}{\cf2{}}{\cf15{createFromObj}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf12{\b this\b0 }}{\cf2{}}{\cf11{.}}{\cf2{data}}{\cf11{.}}{\cf2{features}}{\cf14{\b [x]\b0 }}{\cf2{}}{\cf11{));}}}\par\pard
+\cbpat1{{\cf10{   {5}{6} }}{\cf2{}}          {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {5}{7} }}{\cf2{}}          {\cf12{\b return\b0 }} {\cf2{models}}}\par\pard
+\cbpat1{{\cf10{   {5}{8} }}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {5}{9} }}{\cf2{}}        {\cf12{\b case\b0 }} {\cf2{}}{\cf3{"GeometryCollection"}}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {6}{0} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{'GeometryCollection are not supported by this prototype'}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {6}{1} }}{\cf2{}}          {\cf12{\b break\b0 }}{\cf2{}}{\cf11{;}}}\par\pard
+\cbpat1{{\cf10{   {6}{2} }}{\cf2{}}        {\cf12{\b default\b0 }}{\cf2{}}{\cf11{:}}}\par\pard
+\cbpat1{{\cf10{   {6}{3} }}{\cf2{}}          {\cf12{\b throw new\b0 }} {\cf2{}}{\cf15{Error}}{\cf2{}}{\cf11{(}}{\cf2{}}{\cf3{"Unknown geometry type. Just SimpleFeature geometries are support"}}{\cf2{}}{\cf11{)}}}\par\pard
+\cbpat1{{\cf10{   {6}{4} }}{\cf2{}}      {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {6}{5} }}{\cf2{}}    {\cf11{\}}}}\par\pard
+\cbpat1{{\cf10{   {6}{6} }}{\cf2{}}  {\cf11{\});}}}\par\pard
+\cbpat1{{\cf10{   {6}{7} }}{\cf2{}}{\cf11{\});}}{\cf2{}}}\par\pard
+\cbpat1{}}
