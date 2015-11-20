@@ -217,11 +217,14 @@ game.module(
 									var p = this.body.GetPosition();
 									this.position.x = p.x;// game.Box2D.SCALE;
 									this.position.y = p.y; // game.Box2D.SCALE;
+									this.rotation=this.body.GetAngle().round(2);
 									}
 							var coord=[]
 							for( var x=0;x<model.coordinates.length-1;x++){
+
 								coord[0]=new game.Box2D.Vec2(model.coordinates[x][0],model.coordinates[x][1])
 								coord[1]=new game.Box2D.Vec2(model.coordinates[x+1][0],model.coordinates[x+1][1])
+
 								model.physic.fixtureDef.shape = new game.Box2D.PolygonShape.AsEdge(coord[0],coord[1])
 								graphic.body.CreateFixture(model.physic.fixtureDef);
 							}
@@ -250,7 +253,7 @@ game.module(
 		createPhysic: function(model){
 			try{
 				var graphic = this.children[model.index];
-				console.log(graphic);
+				//console.log(graphic);
 				graphic.body=game.scene.Box2Dworld.CreateBody(model.physic.bodyDef);
 				graphic.body.CreateFixture(model.physic.fixtureDef);
 				graphic.startposition=graphic.body.GetPosition()
@@ -579,8 +582,8 @@ game.createClass('Map','Container',{
 	*/
 	zoomToExtent: function(){
 			var bg_bounds=this.getLocalBounds();
-			console.log(bg_bounds);
-			console.log(this.getBounds())
+			//console.log(bg_bounds);
+			//console.log(this.getBounds())
 			var scalex=game.system.width/bg_bounds.width;
 			var scaley=game.system.height/bg_bounds.height
 			var layerscale=scalex<scaley?scalex:scaley;

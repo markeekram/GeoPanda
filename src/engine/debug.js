@@ -34,6 +34,7 @@ game.Debug = game.Class.extend({
         this.debugDiv.style.color = game.Debug.color;
         this.debugDiv.style.fontFamily = 'Arial';
         this.debugDiv.style.fontSize = '16px';
+        this.fpsl=[];
         document.body.appendChild(this.debugDiv);
     },
 
@@ -44,11 +45,14 @@ game.Debug = game.Class.extend({
     update: function() {
         this.frames++;
 
+
         if (game.Timer.last >= this.last + game.Debug.frequency) {
             var fps = (Math.round((this.frames * 1000) / (game.Timer.last - this.last)));
+            this.fpsl.push(fps);
             this.debugDiv.innerHTML = 'FPS: ' + fps + ' OBJECTS: ' + this.objects;
             this.last = game.Timer.last;
             this.frames = 0;
+            
         }
     }
 });
